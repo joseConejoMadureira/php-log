@@ -8,8 +8,7 @@ class LogsW
 
     public  static function write($message)
     {
-        $logs = config('app.logs');
-        if ($logs == 1) {
+        
             try {
                 $file = fopen('../logs/logs.log', 'a+');
                 $text = " ";
@@ -25,6 +24,6 @@ class LogsW
                 echo $exception;
                 
             }
-        }
+        
     }
 }
