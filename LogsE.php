@@ -13,7 +13,7 @@ class LogsW
                 $file = fopen('../logs/logs.log', 'a+');
                 $text = " ";
                 $text .=  "### data log ---> " . date('d/m/y H:i:s');
-                $text .= "  >>>>> : " . $mensagem . "  >>>>> #";
+                $text .= "  >>>>> : " . $message . "  >>>>> #";
                 $text .= PHP_EOL;
                 fwrite($file, $text);
                 fclose($file);
